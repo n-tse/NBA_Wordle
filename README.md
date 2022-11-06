@@ -11,4 +11,5 @@
 * 11:06 break
 * 11:20 research 
 * 12:07pm codecademy react lessons
+* 12:59pm break for lunch
 …
