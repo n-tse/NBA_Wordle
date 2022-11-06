@@ -12,7 +12,7 @@ List the absolute minimum features the project requires to meet this purpose or 
 * categories that are correct should highlight in green; close should highlight in yellow; completely off will not highlight
 
 What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
-* NBA API https://github.com/swar/nba_api
+* NBA API https://github.com/swar/nba_api or https://github.com/mtthai/nba-api-client or https://www.balldontlie.io/#get-all-players
 * React
 
 If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
