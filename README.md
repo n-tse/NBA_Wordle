@@ -8,4 +8,7 @@
 * 9:06am continue watching video
 * 10:08 break
 * 10:30 watch video
+* 11:06 break
+* 11:20 research 
+* 12:07pm codecademy react lessons
 …
