@@ -19,3 +19,6 @@
 * 7:02 break
 * 7:08 continue react lesson
 * 7:51 break
+* 8:01 continue react lesson
+* 9:04 complete react lesson
+* 9:39 begin next react lesson - advanced JXS
