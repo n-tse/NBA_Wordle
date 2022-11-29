@@ -13,3 +13,7 @@
 * 12:07pm codecademy react lessons
 * 12:59pm break for lunch
 …
+
+#### Monday, 11/28/22
+* 6:15pm codecademy react lesson - components
+* 7:02 break
