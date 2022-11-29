@@ -22,3 +22,4 @@
 * 8:01 continue react lesson
 * 9:04 complete react lesson
 * 9:39 begin next react lesson - advanced JXS
+* 10:40 break for the day
