@@ -17,3 +17,5 @@
 #### Monday, 11/28/22
 * 6:15pm codecademy react lesson - components
 * 7:02 break
+* 7:08 continue react lesson
+* 7:51 break
