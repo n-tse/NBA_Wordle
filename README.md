@@ -27,3 +27,5 @@
 #### Sunday, 12/11/22
 * 9:30 research
 * 12:08 break
+* 2:12 resume
+* 3:34 break
