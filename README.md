@@ -23,3 +23,7 @@
 * 9:04 complete react lesson
 * 9:39 begin next react lesson - advanced JXS
 * 10:40 break for the day
+
+#### Sunday, 12/11/22
+* 9:30 research
+* 12:08 break
