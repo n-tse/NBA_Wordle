@@ -8,7 +8,7 @@ function App() {
       <nav>
         <h1>NBA Wordle</h1>
       </nav>
-      < SearchBar />
+      < SearchBar placeholder="Enter a player name" />
     </div>
   );
 }
