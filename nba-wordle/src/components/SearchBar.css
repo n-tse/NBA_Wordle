@@ -18,7 +18,7 @@
 .searchIcon {
   height: 60px;
   width: 60px;
-  background-color: white;
+  background-color: rgb(40, 38, 38);
   display: grid;
   place-items: center;
 }
@@ -29,6 +29,7 @@ input:focus {
 
 .searchIcon svg {
   font-size: 35px;
+  color: aqua;
 }
 
 
