@@ -1,31 +1,43 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
 import SearchIcon from '@mui/icons-material/Search';
+import ClearIcon from '@mui/icons-material/Clear';
 
 function SearchBar({ placeholder, data }) {
   
   const [filteredData, setFilteredData] = useState([]);
+  const [nameEntered, setNameEntered] = useState("");
+  
   const handleFilter = (event) => {
-    const searchName = event.target.value
+    const searchName = event.target.value;
+    setNameEntered(searchName);
     const newFilter = data.filter((value) => {
       return (value.first_name.toLowerCase() + " " + value.last_name.toLowerCase()).includes(searchName.toLowerCase());
     });
+
     if (searchName === "") {
       setFilteredData([]);
     } else {
       setFilteredData(newFilter);
     }
   }
+
+  const clearInput = () => {
+    setFilteredData([]);
+    setNameEntered("");
+  }
+
   return (
     <div className="search">
       <div className="searchInputs">
         <input 
           type="text"
           placeholder={placeholder}
+          value={nameEntered}
           onChange={handleFilter}
         />
         <div className="searchIcon">
-          <SearchIcon />
+          {filteredData.length === 0 ? <SearchIcon /> : <ClearIcon id="clearBtn" onClick={clearInput}/>}
         </div>
       </div>
       {filteredData.length !== 0 && (

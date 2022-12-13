@@ -61,3 +61,7 @@ input:focus {
 .dataItem:hover {
   background-color: lightgray;
 }
+
+#clearBtn {
+  cursor: pointer;
+}
