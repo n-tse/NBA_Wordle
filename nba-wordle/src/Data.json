@@ -1,0 +1,92 @@
+[
+  {
+    "id": 15,
+    "first_name": "Giannis",
+    "height_feet": 6,
+    "height_inches": 11,
+    "last_name": "Antetokounmpo",
+    "position": "F",
+    "team": {
+        "id": 17,
+        "abbreviation": "MIL",
+        "city": "Milwaukee",
+        "conference": "East",
+        "division": "Central",
+        "full_name": "Milwaukee Bucks",
+        "name": "Bucks"
+    },
+    "weight_pounds": 242
+  },
+  {
+    "id": 100,
+    "first_name": "Jordan",
+    "height_feet": 6,
+    "height_inches": 5,
+    "last_name": "Clarkson",
+    "position": "G",
+    "team": {
+        "id": 29,
+        "abbreviation": "UTA",
+        "city": "Utah",
+        "conference": "West",
+        "division": "Northwest",
+        "full_name": "Utah Jazz",
+        "name": "Jazz"
+    },
+    "weight_pounds": 194
+  },
+  {
+    "id": 184,
+    "first_name": "Danny",
+    "height_feet": 6,
+    "height_inches": 6,
+    "last_name": "Green",
+    "position": "G-F",
+    "team": {
+        "id": 15,
+        "abbreviation": "MEM",
+        "city": "Memphis",
+        "conference": "West",
+        "division": "Southwest",
+        "full_name": "Memphis Grizzlies",
+        "name": "Grizzlies"
+    },
+    "weight_pounds": 215
+  },
+  {
+    "id":237,
+    "first_name":"LeBron",
+    "last_name":"James",
+    "position":"F",
+    "height_feet": 6,
+    "height_inches": 8,
+    "weight_pounds": 250,
+    "team":{
+      "id":14,
+      "abbreviation":"LAL",
+      "city":"Los Angeles",
+      "conference":"West",
+      "division":"Pacific",
+      "full_name":"Los Angeles Lakers",
+      "name":"Lakers"
+    }
+  },
+  {
+    "id": 349,
+    "first_name": "Jusuf",
+    "height_feet": 7,
+    "height_inches": 0,
+    "last_name": "Nurkic",
+    "position": "C",
+    "team": {
+        "id": 25,
+        "abbreviation": "POR",
+        "city": "Portland",
+        "conference": "West",
+        "division": "Northwest",
+        "full_name": "Portland Trail Blazers",
+        "name": "Trail Blazers"
+    },
+    "weight_pounds": 275
+  }
+]
