@@ -14,7 +14,15 @@ function SearchBar({ placeholder, data }) {
           <SearchIcon />
         </div>
       </div>
-      <div className="dataResult"></div>
+      <div className="dataResult">
+        {data.map((value, key) => {
+          return (
+            <div className="dataItem"> 
+              {value.first_name + " " + value.last_name} 
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
