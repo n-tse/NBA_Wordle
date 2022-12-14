@@ -27,6 +27,11 @@ function SearchBar({ placeholder, data }) {
     setNameEntered("");
   }
 
+  const submitGuess = () => {
+    alert("guess made");
+    clearInput();
+  }
+
   return (
     <div className="search">
       <div className="searchInputs">
@@ -44,7 +49,7 @@ function SearchBar({ placeholder, data }) {
         <div className="dataResult">
           {filteredData.map((value, key) => {
             return (
-              <div className="dataItem"> 
+              <div className="dataItem" onClick={submitGuess}> 
                 <p> {value.first_name + " " + value.last_name} </p> 
               </div>
             );
