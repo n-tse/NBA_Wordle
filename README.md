@@ -31,3 +31,6 @@
 * 3:34 break
 * 3:46 resume
 * 5:17 break
+
+#### Tuesday, 12/13/22
+* 6:46 research how to write correct guess functionality
