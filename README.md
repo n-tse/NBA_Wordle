@@ -34,3 +34,4 @@
 
 #### Tuesday, 12/13/22
 * 6:46 research how to write correct guess functionality
+* 8:07 break
