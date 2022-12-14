@@ -1,9 +1,22 @@
-import React from 'react'
-
-function ResultsTable() {
+export default function Table({theadData, tbodyData}) {
   return (
-    <div>ResultsTable</div>
-  )
+  <table>
+    <thead>
+      <tr>
+        {theadData.map(heading => {
+          return <th key={heading}>{heading}</th>
+        })}
+      </tr>
+    </thead>
+    <tbody>
+      {tbodyData.map((row, index) => {
+        return <tr key={index}>
+          {theadData.map((key, index) => {
+            return <td key={row[key]}>{row[key]}</td>
+          })}
+        </tr>;
+      })} 
+    </tbody>
+  </table>
+  );
 }
-
-export default ResultsTable
