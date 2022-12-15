@@ -42,3 +42,5 @@
 * 7:52 break
 * 8:04 resume
 * 9:43 break
+* 10:30 resume
+* 12:42 break. fiddled around without much progress...
