@@ -40,3 +40,5 @@
 #### Wednesday, 12/14/22
 * 6:28 watch youtube tutorial
 * 7:52 break
+* 8:04 resume
+* 9:43 break
