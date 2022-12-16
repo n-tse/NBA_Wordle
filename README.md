@@ -47,3 +47,4 @@
 
 #### Friday, 12/15/22
 * 11:13 youtube tutorial for more functional searchbar
+* 11:40 read article on hooks
