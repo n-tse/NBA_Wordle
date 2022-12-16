@@ -7,6 +7,7 @@ function SearchBar({ placeholder, data }) {
   
   const [filteredData, setFilteredData] = useState([]);
   const [nameEntered, setNameEntered] = useState("");
+  // const [guessedPlayer, setGuessedPlayer] = useState("");
   
   const handleFilter = (event) => {
     const searchName = event.target.value;
@@ -23,12 +24,15 @@ function SearchBar({ placeholder, data }) {
   }
 
   const clearInput = () => {
+    // console.log(guessedPlayer);
     setFilteredData([]);
     setNameEntered("");
   }
 
-  const submitGuess = () => {
-    alert("guess made");
+  const submitGuess = (guess) => {
+    // alert("guess made");
+    const playerFullName = guess.first_name + " " + guess.last_name;
+    console.log(playerFullName);
     clearInput();
   }
 
@@ -48,9 +52,13 @@ function SearchBar({ placeholder, data }) {
       {filteredData.length !== 0 && (
         <div className="dataResult">
           {filteredData.map((value, key) => {
+            let playerFullName = value.first_name + " " + value.last_name;
             return (
-              <div className="dataItem" onClick={submitGuess}> 
-                <p> {value.first_name + " " + value.last_name} </p> 
+              // <div className="dataItem" onClick={() => setGuessedPlayer((oldGuess) => oldGuess.concat(value.first_name + " " + value.last_name))}> 
+              // <div className="dataItem" onClick={() => setGuessedPlayer((oldGuess) => oldGuess.concat(playerFullName))}>            
+              <div className="dataItem" onClick={() => submitGuess(value) }>        
+                {/* <p> {value.first_name + " " + value.last_name} </p>  */}
+                <p> {playerFullName} </p> 
               </div>
             );
           })}
