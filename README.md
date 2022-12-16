@@ -44,3 +44,6 @@
 * 9:43 break
 * 10:30 resume
 * 12:42 break. fiddled around without much progress...
+
+#### Friday, 12/15/22
+* 11:13 youtube tutorial for more functional searchbar
