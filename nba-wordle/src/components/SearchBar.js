@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import './SearchBar.css';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
+import ResultsTable from './ResultsTable';
 
 function SearchBar({ placeholder, data }) {
   
   const [filteredData, setFilteredData] = useState([]);
   const [nameEntered, setNameEntered] = useState("");
-  // const [guessedPlayer, setGuessedPlayer] = useState("");
+  const [guessHistory, setGuessHistory] = useState([]);
   
   const handleFilter = (event) => {
     const searchName = event.target.value;
@@ -32,7 +33,9 @@ function SearchBar({ placeholder, data }) {
   const submitGuess = (guess) => {
     // alert("guess made");
     const playerFullName = guess.first_name + " " + guess.last_name;
+    setGuessHistory(guessHistory => guessHistory.concat(playerFullName));
     console.log(playerFullName);
+    console.log(guessHistory);
     clearInput();
   }
 
