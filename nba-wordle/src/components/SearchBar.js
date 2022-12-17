@@ -30,33 +30,19 @@ function SearchBar({ placeholder, data }) {
   }
 
   const clearInput = () => {
-    // console.log(guessedPlayer);
     setFilteredData([]);
     setNameEntered("");
   }
 
-  // const submitGuess = (guess) => {
-  //   // alert("guess made");
-  //   const playerFullName = guess.first_name + " " + guess.last_name;
-  //   // setGuessHistory(guessHistory => guessHistory.concat(playerFullName));
-
-  //   setGuessHistory(guessHistory => [...guessHistory, nameEntered]);
-  //   onGuess();
-  //   console.log("submit guess: player name " + playerFullName);
-  //   console.log("submit guess: guessHistory " + guessHistory);
-  //   clearInput();
-  // }
-
   const submitGuess = (guess) => {
-    setGuessHistory(guessHistory => [...guessHistory, nameEntered]);
+    const playerFullName = guess.first_name + " " + guess.last_name;
+
+    setGuessHistory(guessHistory => [...guessHistory, playerFullName]);
+    onGuess();
+    console.log("submit guess: player name " + playerFullName);
+    console.log("submit guess: guessHistory " + guessHistory);
     clearInput();
   }
-
-  const updateNameEntered = ({ target }) => {
-    setNameEntered(target.value);
-  }
-
-  const Search = ({ query }) => <li>{query}</li>
 
   return (
     <div className="search">
@@ -76,12 +62,8 @@ function SearchBar({ placeholder, data }) {
         <div className="dataResult">
           {filteredData.map((value) => {
             let playerFullName = value.first_name + " " + value.last_name;
-            return (
-              // <div className="dataItem" onClick={() => setGuessedPlayer((oldGuess) => oldGuess.concat(value.first_name + " " + value.last_name))}> 
-              // <div className="dataItem" onClick={() => setGuessedPlayer((oldGuess) => oldGuess.concat(playerFullName))}>            
+            return (        
               <div className="dataItem" onClick={() => submitGuess(value) }>        
-                {/* <p> {value.first_name + " " + value.last_name} </p>  */}
-                {/* <ResultsTable guessesMade={guessHistory}/> */}
                 <p> {playerFullName} </p> 
               </div>
             );

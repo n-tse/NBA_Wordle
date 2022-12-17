@@ -10,9 +10,6 @@ import { boardDefault, generatePlayerSet } from './MysteryPlayer';
 export const AppContext = createContext();
 
 function App() {
-  // const getHeadings = () => {
-  //   return Object.keys(PlayerData[0]);
-  // }
 
   const [board, setBoard] = useState(boardDefault);
   const [playerSet, setPlayerSet] = useState(new Set());
@@ -50,7 +47,6 @@ function App() {
         <SearchBar placeholder="Enter a player name" data={PlayerData} />
         {/* <ResultsTable /> */}
         {/* <JsonDataDisplay /> // to display all data in json file */}
-        {/* <ResultsTable theadData={getHeadings()} tbodyData={PlayerData}/> */}
       </AppContext.Provider>
     </div>
   );
