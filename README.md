@@ -55,3 +55,4 @@
 * 11:32 try to debug why guesshistory log is always delayed by one entry
 * 12:58 break. no breakthrough yet
 * 1:52 codecademy hooks lessons
+* 3:16 complete function components lesson; work through state hook lesson
