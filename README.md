@@ -54,3 +54,4 @@
 #### Saturday, 12/17/22
 * 11:32 try to debug why guesshistory log is always delayed by one entry
 * 12:58 break. no breakthrough yet
+* 1:52 codecademy hooks lessons
