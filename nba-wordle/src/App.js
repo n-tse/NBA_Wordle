@@ -33,7 +33,6 @@ function App() {
 
   const onGuess = () => {
     console.log("onGuess mystery player: " + correctPlayer);
-    console.log("onGuess reached");
     console.log("guessed player guessHistory" + guessHistory);
     if (guessHistory === correctPlayer) {
       console.log("correct guess");

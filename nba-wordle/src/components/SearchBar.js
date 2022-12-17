@@ -35,16 +35,28 @@ function SearchBar({ placeholder, data }) {
     setNameEntered("");
   }
 
+  // const submitGuess = (guess) => {
+  //   // alert("guess made");
+  //   const playerFullName = guess.first_name + " " + guess.last_name;
+  //   // setGuessHistory(guessHistory => guessHistory.concat(playerFullName));
+
+  //   setGuessHistory(guessHistory => [...guessHistory, nameEntered]);
+  //   onGuess();
+  //   console.log("submit guess: player name " + playerFullName);
+  //   console.log("submit guess: guessHistory " + guessHistory);
+  //   clearInput();
+  // }
+
   const submitGuess = (guess) => {
-    // alert("guess made");
-    const playerFullName = guess.first_name + " " + guess.last_name;
-    // setGuessHistory(guessHistory => guessHistory.concat(playerFullName));
-    onGuess();
-    setGuessHistory(guessHistory => [...guessHistory, playerFullName]);
-    console.log("submit guess: player name " + playerFullName);
-    console.log("submit guess: guessHistory " + guessHistory);
+    setGuessHistory(guessHistory => [...guessHistory, nameEntered]);
     clearInput();
   }
+
+  const updateNameEntered = ({ target }) => {
+    setNameEntered(target.value);
+  }
+
+  const Search = ({ query }) => <li>{query}</li>
 
   return (
     <div className="search">
@@ -59,6 +71,7 @@ function SearchBar({ placeholder, data }) {
           {filteredData.length === 0 ? <SearchIcon /> : <ClearIcon id="clearBtn" onClick={clearInput}/>}
         </div>
       </div>
+
       {filteredData.length !== 0 && (
         <div className="dataResult">
           {filteredData.map((value) => {
