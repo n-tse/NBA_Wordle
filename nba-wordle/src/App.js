@@ -16,7 +16,8 @@ function App() {
 
   const [board, setBoard] = useState(boardDefault);
   const [playerSet, setPlayerSet] = useState(new Set());
-  const [guessedPlayer, setGuessedPlayer] = useState([]);
+  // const [guessedPlayer, setGuessedPlayer] = useState([]);
+  const [guessHistory, setGuessHistory] = useState([]);
   const [correctPlayer, setCorrectPlayer] = useState("");
   const [gameOver, setGameOver] = useState({
     gameOver: false,
@@ -31,8 +32,14 @@ function App() {
   }, []);
 
   const onGuess = () => {
-    console.log(guessedPlayer);
-
+    console.log("onGuess mystery player: " + correctPlayer);
+    console.log("onGuess reached");
+    console.log("guessed player guessHistory" + guessHistory);
+    if (guessHistory === correctPlayer) {
+      console.log("correct guess");
+    } else {
+      console.log("incorrect guess");
+    }
   }
   
   return (
@@ -40,8 +47,9 @@ function App() {
       <nav>
         <h1>NBA Wordle</h1>
       </nav>
-      <AppContext.Provider value={{board, setBoard, correctPlayer, guessedPlayer, onGuess}}>
+      <AppContext.Provider value={{board, setBoard, correctPlayer, guessHistory, onGuess}}>
         <SearchBar placeholder="Enter a player name" data={PlayerData} />
+        {/* <ResultsTable /> */}
         {/* <JsonDataDisplay /> // to display all data in json file */}
         {/* <ResultsTable theadData={getHeadings()} tbodyData={PlayerData}/> */}
       </AppContext.Provider>
