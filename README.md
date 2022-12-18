@@ -57,3 +57,5 @@
 * 1:52 codecademy hooks lessons
 * 3:16 complete function components lesson; work through state hook lesson
 * 4:34 complete state hook lesson
+* 6:05 review hooks lessons
+* 7:56 try to update code to corporate lessons
